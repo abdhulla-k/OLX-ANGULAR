@@ -17,4 +17,6 @@ export class AppComponent {
     this.toggleService.toggleChange();
     console.log(this.toggleService.toggleMenueStatus);
   }
+
+ 
 }

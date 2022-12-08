@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header-component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SideNavComponent
+    SideNavComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
