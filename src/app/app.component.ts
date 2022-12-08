@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { ToggleMenueService } from './toggle-button.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,9 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'olx';
-  sideNaveStatus: boolean = false;
+
+  constructor(private toggleService: ToggleMenueService) { }
 
   toggeleMenue() {
-    this.sideNaveStatus = !this.sideNaveStatus;
+    this.toggleService.toggleMenueStatus = !this.toggleService.toggleMenueStatus;
+    this.toggleService.toggleChange();
+    console.log(this.toggleService.toggleMenueStatus);
   }
 }
