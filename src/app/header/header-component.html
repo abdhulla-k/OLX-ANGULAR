@@ -1,9 +1,12 @@
 <div class="">
+    <!-- nav bar -->
     <nav class="contain container-fluid navbar navbar-expand-lg navbar-light bg-olx">
-        <a class="navbar-brand" href="#">
+        <!-- logo image -->
+        <a class="navbar-brand">
             <img src="https://logos-world.net/wp-content/uploads/2022/04/OLX-Symbol.png" width="40" height="30" alt="">
         </a>
 
+        <!-- Home button -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -12,6 +15,7 @@
             </ul>
         </div>
 
+        <!-- Authentication Button -->
         <div>
             <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -22,12 +26,14 @@
 
         <!-- toggle menue -->
         <div class="humberger">
-            <fa-icon [icon]="faCoffee"></fa-icon>
+            <fa-icon style="cursor:pointer;" [icon]="faCoffee" (click)="showMenue()"></fa-icon>
         </div>
     </nav>
+    <!-- /navbar -->
 
-    <hr style="margin: 0px; padding: 0px;">
+    <hr style="margin: 0px; padding: 0px;" class="hide-small">
 
+    <!-- categories -->
     <div class="contain2 container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light">
 
@@ -55,4 +61,5 @@
             </div>
         </nav>
     </div>
+    <!-- /categories -->
 </div>

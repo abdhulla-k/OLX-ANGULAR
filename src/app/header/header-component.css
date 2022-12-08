@@ -65,6 +65,10 @@
     #auth-btn {
         display: none;
     }
+
+    .hide-small {
+        display: none;
+    }
 }
 
 @media screen and ( min-width: 600px ) and ( max-width: 992px ) {

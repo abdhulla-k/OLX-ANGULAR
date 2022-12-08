@@ -1,0 +1,36 @@
+<div [ngClass]="showStatus ? 'show' : ''" class="side-nav">
+    <div>
+        <!-- side bar -->
+        <div class="ul">
+
+            <!-- button to close the side nav -->
+            <div class="close-btn" (click)="closeSide()">
+                <a><fa-icon style="cursor:pointer;" [icon]="crossIcon"></fa-icon></a>
+            </div>
+
+            <!-- authentication button -->
+            <div class="side-element">
+                <a class="side-element">Log Out</a>
+            </div>
+
+            <!-- categories -->
+            <div class="side-element">
+                <a class="side-element">Cars</a>
+            </div>
+            <div class="side-element">
+                <a class="side-element">Motorcycles</a>
+            </div>
+            <div class="side-element">
+                <a class="side-element">Mobile Phones</a>
+            </div>
+            <div class="side-element">
+                <a class="side-element">Scooters</a>
+            </div>
+            <div class="side-element">
+                <a class="side-element">Commercial & Other Vehicles</a>
+            </div>
+            <!-- /categories -->
+        </div>
+        <!-- /side bar -->
+    </div>
+</div>

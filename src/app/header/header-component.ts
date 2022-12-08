@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, EventEmitter, Output } from "@angular/core";
 
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,5 +9,10 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderComponent {
     faCoffee = faBars;
+    @Output() toggleMenue = new EventEmitter()
 
+    // function to work when clicking on humberger menue
+    showMenue() {
+        this.toggleMenue.emit();
+    }
 }
